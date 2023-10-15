@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>订阅注册</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .checkbox label {
+            display: block;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Apply some styles for smaller screens */
+        @media (max-width: 767px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>注册订阅课程推送信息</h1>
+
+    <form action="/register" method="get">
+        <div class="form-group">
+            <label for="nickname">昵称:</label>
+            <input type="text" id="nickname" name="nickname" required class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <h2>选修：</h2>
+            <div class="checkbox">
+                <label for="option1"><input type="checkbox" id="option1" name="option1" value="软件体系结构"/>软件体系结构</label>
+            </div>
+            <div class="checkbox">
+                <label for="option2"><input type="checkbox" id="option2" name="option2" value="用户界面设计与评测"/>用户界面设计与评测</label>
+            </div>
+            <div class="checkbox">
+                <label for="option3"><input type="checkbox" id="option3" name="option3" value="计算机专业英语"/>计算机专业英语</label>
+            </div>
+            <div class="checkbox">
+                <label for="option4"><input type="checkbox" id="option4" name="option4" value="信息安全技术"/>信息安全技术</label>
+            </div>
+            <div class="checkbox">
+                <label for="option5"><input type="checkbox" id="option5" name="option5" value="移动应用开发"/>移动应用开发</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">秘钥：</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="没有可留空"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>

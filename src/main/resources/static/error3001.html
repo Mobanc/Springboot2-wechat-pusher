@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ce6666;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Apply some styles for smaller screens */
+        @media (max-width: 767px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>注册失败</h1>
+
+    <p>注册失败，请重试，可能的原因：您可能未在微信公众号中进行正常注册操作或某些验证信息被拦截。错误码：3001</p>
+</div>
+</body>
+</html>

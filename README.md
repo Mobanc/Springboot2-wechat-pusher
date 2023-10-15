@@ -177,7 +177,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 将事件回调地址和设置地址都设置为你的服务器地址或域名（一定要和`application-prod.properties`里`wxpusher.server-url`的值一样），后面的`/wechat`和`/main`照抄：
 
-![example-one](D:\my_Pros\springBoot\wx-pusher\src\main\resources\prtsc\example-one.png)
+![example-one](https://github.com/Mobanc/Springboot2-wechat-pusher/blob/main/src/main/resources/prtsc/example-one.png)
 
 ### 构建和运行
 
@@ -266,9 +266,9 @@ chmod +x start.sh stop.sh restart.sh view_logs.sh
 
 - 效果演示：
 
-  ![example-two](D:\my_Pros\springBoot\wx-pusher\src\main\resources\prtsc\example-two.png)
+  ![example-two](https://github.com/Mobanc/Springboot2-wechat-pusher/blob/main/src/main/resources/prtsc/example-two.png)
 
-  ![example-three](D:\my_Pros\springBoot\wx-pusher\src\main\resources\prtsc\example-three.png)
+  ![example-three](https://github.com/Mobanc/Springboot2-wechat-pusher/blob/main/src/main/resources/prtsc/example-three.png)
 
 ## 联系方式
 

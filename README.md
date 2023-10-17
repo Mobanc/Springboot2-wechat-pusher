@@ -227,7 +227,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 ## 服务器部署
 
 - 给予脚本权限
-- 注意！在运行脚本之前需要您根据实际情况修改启动的路径，启动方式等。
+- 注意！在运行脚本之前需要您根据实际情况修改启动的路径，启动方式等。此脚本仅供参考。
 
 ```bash
 chmod +x start.sh stop.sh restart.sh view_logs.sh

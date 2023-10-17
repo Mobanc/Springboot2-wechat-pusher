@@ -235,6 +235,17 @@ chmod +x start.sh stop.sh restart.sh view_logs.sh
 
 ### 启动脚本 `start.sh`
 #### 注意，一定要修改此脚本的启动路径，vim（Linux环境）或右键记事本打开（Windows环境），修改实际的路径！
+```bash
+#!/bin/bash
+
+# 进入项目目录(修改此处！！！)
+cd /path/to/your/project
+
+# 启动 Spring Boot 项目
+nohup java -jar target/wx-dev-0.0.1-SNAPSHOT.jar > logs/application.log 2>&1 &
+
+echo "Spring Boot application started. To view logs, use 'tail -f logs/application.log'"
+```
 
 ```bash
 ./start.sh

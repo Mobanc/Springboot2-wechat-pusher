@@ -227,12 +227,14 @@ SET FOREIGN_KEY_CHECKS = 1;
 ## 服务器部署
 
 - 给予脚本权限
+- 注意！在运行脚本之前需要您根据实际情况修改启动的路径，启动方式等。
 
 ```bash
 chmod +x start.sh stop.sh restart.sh view_logs.sh
 ```
 
 ### 启动脚本 `start.sh`
+#### 注意，一定要修改此脚本的启动路径，vim（Linux环境）或右键记事本打开（Windows环境），修改实际的路径！
 
 ```bash
 ./start.sh
